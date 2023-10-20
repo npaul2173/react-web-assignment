@@ -1,0 +1,26 @@
+.container{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates 3 columns of equal width */
+  /* grid-gap: 10px; Adds a gap between grid items */
+}
+
+.gridItem{    
+        padding: 2vw;
+        text-align: center;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+}
+
+.gridItem:nth-child(1){
+    padding-right: 5vw;
+}
+
+.gridItem:nth-child(2){
+    justify-content: center;
+    position: relative;
+}
+
+.gridItem:nth-child(3){
+    column-gap: 1vw;
+}
