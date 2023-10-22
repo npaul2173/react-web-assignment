@@ -21,9 +21,7 @@
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  border-color: #28395a;
-  border-style: solid;
-  border-width: 0px 1px 1px 1px;
+  
 }
 
 .gridItem:nth-child(1) {
@@ -33,6 +31,9 @@
 .gridItem:nth-child(2) {
   justify-content: center;
   position: relative;
+  border-color: #28395a;
+  border-style: solid;
+  border-width: 0px 1px 1px 1px;
 }
 
 .gridItem:nth-child(3) {
