@@ -1,0 +1,14 @@
+.homeContainer {
+  height: 100vh;
+  display: flex;
+  flex-flow: column;
+  position: relative;
+}
+
+.headerContainer {
+  flex: 0 1 auto;
+}
+
+.chirpzListContainer {
+  flex: 1 1 auto;
+}

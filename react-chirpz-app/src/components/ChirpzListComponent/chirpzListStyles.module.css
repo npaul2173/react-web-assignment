@@ -1,0 +1,57 @@
+.container {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  background: #091224;
+  color: #ffffff;
+}
+
+.listContainer {
+  width: calc((100vw / 3));
+  height: 87dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-right: 1px solid #28395a;
+  border-left: 1px solid #28395a;
+  overflow-y: auto;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}
+
+.buttonStyle {
+  border: none;
+  background: #28395a;
+  padding: 0.4vw 0.5vw;
+  border-radius: 0.3vw;
+  color: #cfd7e798;
+  font-size: 0.7vw;
+}
+
+.listItemContainer {
+  width: 100%;
+  border-bottom: 1px solid #28395a;
+  padding: 2vw 5vw 1vw 5vw;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.6vw;
+}
+
+.userNameText {
+  font-weight: 700;
+  font-size: 0.8vw;
+}
+
+.captionTextStyle {
+  color: #a6b6d6;
+  font-size: 0.8vw;
+}
+
+.tagBtnContainerStyle {
+  display: flex;
+  padding-top: 2vw;
+  column-gap: 1.2vw;
+}

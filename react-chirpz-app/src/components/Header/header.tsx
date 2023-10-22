@@ -1,45 +1,25 @@
 import React from "react";
-import styles from "./styles.module.css";
 import { profilePicture, birdIcon, vector } from "../../assets";
+import styles from "./styles.module.css";
 
 const Header = (props: any) => {
+  const { handleCreateChirpz } = props;
   return (
     <>
-      <div
-        className={styles.container}
-        style={{ background: "#091224", color: "#ffffff" }}
-      >
+      <div className={styles.container}>
         <div className={styles.gridItem}>
-          <div>
-            <img src={birdIcon} />
+          <div className={styles.birdImgStyle}>
+            <img width={"100%"} height={"100%"} src={birdIcon} />
           </div>
-          <div style={{fontSize: "1vw", fontWeight: 600}}>Chirpz</div>
+          <div className={styles.headerText}>Chirpz</div>
         </div>
 
-        <div
-          className={styles.gridItem}
-          style={{
-            borderRight: "1px solid #28395A",
-            borderLeft: "1px solid #28395A",
-          }}
-        >
-          <div style={{fontSize: "1vw", fontWeight: 700}}>Home</div>
-          <div style={{ position: "absolute", right: "2vw" }}>
+        <div className={styles.gridItem}>
+          <div className={styles.homeTextStyle}>Home</div>
+          <div className={styles.createBtncontainer}>
             <button
-              style={{
-                border: "none",
-                padding: "0.4vw",
-                borderRadius: "1vw",
-                width: "4vw",
-                height: "1.5vw",
-                backgroundColor: "#E88607",
-                color: "#fff",
-                fontSize: "0.8vw",
-                fontWeight: 600,
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center"
-              }}
+              className={styles.createBtnStyle}
+              onClick={handleCreateChirpz}
             >
               Create
             </button>
@@ -47,12 +27,12 @@ const Header = (props: any) => {
         </div>
 
         <div className={styles.gridItem}>
-          <div>
-            <img src={profilePicture} />
+          <div className={styles.profilePictureImg}>
+            <img width={"100%"} height={"100%"} src={profilePicture} />
           </div>
-          <div style={{fontSize: "1vw", fontWeight: 600}}>John Doe</div>
-          <div>
-            <img src={vector} />
+          <div className={styles.userNameStyle}>John Doe</div>
+          <div className={styles.menuIconStyle}>
+            <img width={"100%"} height={"100%"} src={vector} />
           </div>
         </div>
       </div>
