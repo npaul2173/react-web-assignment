@@ -39,12 +39,12 @@ const CreateInfoDialogueContainer = (props: any) => {
     const formattedTime = currentTime.toISOString().split(".");
 
     const splittedDate = formattedTime && `${formattedTime[0]}Z`;
-    if (captionInput.current && tagCollections?.lenth > 0 && splittedDate) {
+    if (captionInput.current && tagCollections?.length > 0 && splittedDate) {
       setFormValidationMessage("");
       const createChirpzDataPayload = {
         apiId: "v1",
         isVerified: true,
-        userName: "Mithun Chakravarthy",
+        userName: "John Doe",
         caption: captionInput.current,
         tags: tagCollections,
         createdAt: splittedDate,

@@ -17,7 +17,7 @@ const ChirpzList = (props: any) => {
       const filteredChirpzListResponseData: any[] =
         chirpzListApiResponseData?.data?.body?.length > 0 &&
         chirpzListApiResponseData?.data?.body?.filter(
-          (items: any) => items?.userName
+          (items: any) => items?.userName && items?.caption && items?.tags
         );
       setFilteredChirpzListData(filteredChirpzListResponseData);
     }
