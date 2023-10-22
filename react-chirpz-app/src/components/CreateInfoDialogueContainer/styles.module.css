@@ -1,0 +1,156 @@
+.modelContainer {
+  display: flex;
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  background: #09122499;
+}
+
+.infoDialogueContainer {
+  width: 30vw;
+  height: 65vh;
+  background: #0e1931;
+  color: #fff;
+  padding: 3vw;
+  box-sizing: border-box;
+  position: relative;
+}
+
+input {
+  outline: none;
+  box-shadow: none !important;
+  background: #0e1931 !important;
+  border: none;
+  color: #a6b6d6 !important;
+  font-size: 1vw;
+  width: 80%;
+}
+
+::placeholder {
+  color: #3f4b63;
+}
+
+input:-webkit-autofill {
+  color: #a6b6d6 !important;
+}
+input:-webkit-autofill {
+  background: #0e1931 !important;
+}
+
+.createButtonStyle {
+  border: none;
+  background: #e88607;
+  padding: 0.3vw 1vw;
+  border-radius: 1vw;
+  color: #fff;
+  font-size: 0.8vw;
+  margin-right: 1vw;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cancelButtonStyle {
+  background: #2b4275;
+  border: none;
+  padding: 0.3vw 1vw;
+  border-radius: 1vw;
+  color: #fff;
+  font-size: 0.8vw;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.footerStyle {
+  position: absolute;
+  bottom: 2vw;
+  right: 3vw;
+  display: flex;
+}
+
+.tagsContainer {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  column-gap: 1vw;
+  row-gap: 1vw;
+}
+
+.tagsBtn {
+  background: #28395a;
+  border: none;
+  padding: 0.2vw 0.6vw;
+  border-radius: 0.2vw;
+  color: #cfd7e7;
+  font-size: 0.7vw;
+}
+
+.errorMessageText {
+  text-align: center;
+  color: #fb0101;
+  position: absolute;
+  top: 2%;
+  left: 35%;
+}
+
+.infoHeadContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 4vw;
+}
+
+.infoHeadSubListContainer {
+  font-size: 1vw;
+  font-weight: 700;
+}
+
+.infoHeadSubList {
+  color: #ffb501;
+  padding-left: 0.5vw;
+}
+
+.infoHeadSubListCloseIcon {
+  width: 1.2vw;
+  cursor: pointer;
+}
+
+.infoSectionContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 3vw;
+}
+
+.infoSectionCreateTaskInput {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.9vw;
+}
+
+.infoSectionCreateInput {
+  font-size: 1vw;
+  font-weight: 700;
+}
+
+.infoSectionTagsInputContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.9vw;
+}
+
+.infoSectionTagsInputSubContainer {
+  position: relative;
+}
+
+.infoSectionTagsInput {
+  border-bottom: 1px solid #142340;
+  padding-bottom: 0.5vw;
+  width: 70%;
+}
+
+.infoSectionTagsAddBtn {
+  position: absolute;
+  left: 60%;
+  cursor: pointer;
+}
